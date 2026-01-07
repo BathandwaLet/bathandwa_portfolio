@@ -1,14 +1,27 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
 
-    <main>
+<div class="page">
+
+    <header class="top-nav">
+        <div class="nav-container">
+            <span class="brand">Bathandwa Maphumulo</span>
+
+            <nav class="nav-links">
+                <NavLink href="" Match="NavLinkMatch.All">Home</NavLink>
+                <NavLink href="skills">Skills</NavLink>
+                <NavLink href="certificates">Certificates</NavLink>
+                <NavLink href="projects">Projects</NavLink>
+                <NavLink href="education">Education</NavLink>
+                <NavLink href="contact">Contact</NavLink>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
         <article class="content px-4">
             @Body
         </article>
-        
+
         <footer class="portfolio-footer">
             <small>@DateTime.Now.Year Bathandwa L Maphumulo</small>
             <p>
@@ -16,4 +29,5 @@
             </p>
         </footer>
     </main>
+
 </div>
