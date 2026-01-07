@@ -1,0 +1,19 @@
+﻿@inherits LayoutComponentBase
+<div class="page">
+    <div class="sidebar">
+        <NavMenu/>
+    </div>
+
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+        
+        <footer class="portfolio-footer">
+            <small>@DateTime.Now.Year Bathandwa L Maphumulo</small>
+            <p>
+                <small>Building thoughtful software, one line at a time.</small>
+            </p>
+        </footer>
+    </main>
+</div>
